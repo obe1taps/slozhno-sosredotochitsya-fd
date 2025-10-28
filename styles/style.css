@@ -82,7 +82,7 @@
   padding-bottom: 5px;
 }
 
-.header__title {
+.page__title {
   align-self: center;
   font-family: var(--font-family);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -136,11 +136,11 @@
 
 .section__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.section__cards-title {
+.section__title {
   font-family: var(--font-family);
   font-size: 18px;
   line-height: 130%;
@@ -155,7 +155,6 @@
 .card__title {
   font-family: var(--font-family);
   font-size: 18px;
-  line-height: 130%;
   color: var(--page-color);
 }
 
@@ -166,6 +165,59 @@
   color: var(--card-text-color);
 }
 
-.section__cards-concentration {
-  margin-top: 50px;
+.card__link {
+  text-shadow: 2px 2px 0px var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
+
+.card__link:hover {
+  border-bottom-color: currentColor;
+}
+
+.card__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px currentColor;
+}
+
+.section__cards-concentration {
+  margin-top: 51px;
+}
+
+.card__title-alt {
+  font-weight: 400;
+}
+
+.section__advice {
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: var(--page-color);
+}
+
+.section__gallery {
+  margin-top: 50px;
+  display: grid;
+  gap: 10px;
+}
+
+.gallery {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: 1fr;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.site-footer {
+  margin-top: 38px;
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  min-height: 668px;
+}
+
