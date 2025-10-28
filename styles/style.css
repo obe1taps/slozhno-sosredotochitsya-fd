@@ -147,6 +147,11 @@
   color: var(--accent-color);
 }
 
+.card {
+  display: grid;
+  gap: 10px;
+}
+
 .card__title {
   font-family: var(--font-family);
   font-size: 18px;
@@ -159,4 +164,8 @@
   font-size: 18px;
   line-height: 130%;
   color: var(--card-text-color);
+}
+
+.section__cards-concentration {
+  margin-top: 50px;
 }
