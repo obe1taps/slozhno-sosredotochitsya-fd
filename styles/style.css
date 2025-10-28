@@ -1,5 +1,162 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  min-height: 100vh;
+  background-image: var(--page-bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--page-bg-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: var(--default-padding);
+  right: var(--default-padding);
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: var(--default-padding);
+  left: var(--default-padding);
+  width: 25px;
+  height: 25px;
+  border-bottom: 2px solid var(--accent-color);
+  border-left: 2px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  padding: var(--default-padding);
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  background: transparent;
+  align-items: center;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  justify-self: flex-end;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  padding: 1.5px 13px;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  background: none;
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border-color: var(--accent-color);
+  padding-bottom: 5px;
+}
+
+.header__title {
+  align-self: center;
+  font-family: var(--font-family);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.header__text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--page-color);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.decor-rec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  top: var(--default-padding);
+  right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem);
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 139%;
+  color: var(--accent-color);
+}
+
+.decor-rec::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.section {
+  padding: 0 var(--default-padding);
+}
+
+.section__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 20px;
+}
+
+.section__cards-title {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-color);
+}
+
+.card__title {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--page-color);
+}
+
+.card__text {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--card-text-color);
 }
