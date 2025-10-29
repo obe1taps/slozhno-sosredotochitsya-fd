@@ -197,7 +197,7 @@
 }
 
 .section__cards-concentration-up {
-  margin-top: clamp(3.125rem, 10.239vw + 0.725rem, 5rem);
+  margin-top: clamp(3.063rem, 10.922vw + 0.503rem, 5.063rem);
 }
 
 .card__title-alt {
@@ -249,14 +249,16 @@ footer .page__title {
   }
 
   .section__cards-hard {
-  grid-template-columns: 1fr 2fr;
-}
+    grid-template-columns: 1fr 2fr;
+  }
+
   .card{
     grid-column: 2;
-}
+  }
+
   .section__title-concentration {
     max-width: 236px;
-}
+  }
 
   .section__cards-concentration .card {
     grid-column: auto;
@@ -265,7 +267,8 @@ footer .page__title {
   .section__cards-concentration-up {
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: auto;
-}
+  }
+
   .section__title-concentration-up{
     grid-row: 1 / 3; 
   }
@@ -273,6 +276,7 @@ footer .page__title {
   .gallery{
     grid-template-columns: repeat(3, 1fr);
   }
+
   .gallery__image:nth-child(1){
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
