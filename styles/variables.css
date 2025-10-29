@@ -1,10 +1,14 @@
 :root {
   --page-bg-image: url("../images/cover-image-dark.png");
-  --page-bg-color: #000028;
   --page-color: #000028;
+  --button-color: #FF0070;
+  --border-button-color: #FF0070;
   --accent-color: #FF0070;
   --title-color: #DB00FF;
+  --corner-color: #FF0070;
+  --section-title-color: #FF0070;
   --card-text-color: #F1B2CE;
   --default-padding: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   --font-family: 'IBM Plex Mono', sans-serif;
 }
+
