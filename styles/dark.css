@@ -1,6 +1,7 @@
 :root.theme-dark {
   --page-bg-image: url("../images/cover-image-dark.png");
   --page-color: #000028;
+  --header-text-color: #000028;
   --button-color: #FF0070;
   --border-button-color: #FF0070;
   --accent-color: #FF0070;

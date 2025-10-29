@@ -103,7 +103,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--page-color);
+  color: var(--header-text-color);
 }
 
 .title-decor {
@@ -163,7 +163,7 @@
 .card__title {
   font-family: var(--font-family);
   font-size: 18px;
-  color: var(--page-color);
+  color: var(--header-text-color);
 }
 
 .card__text {
@@ -204,7 +204,7 @@
 .section__advice {
   font-family: var(--font-family);
   font-size: 18px;
-  color: var(--page-color);
+  color: var(--header-text-color);
 }
 
 .section__gallery {
