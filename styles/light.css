@@ -1,6 +1,6 @@
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
-  --page-color: #353430;
+  --page-color: #FFF1F7;
   --button-color: #353430;
   --border-button-color: #353430;
   --corner-color: #353430;
@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --page-bg-image: url("../images/cover-image-light.png");
-    --page-color: #353430;
+    --page-color: #FFF1F7;
     --button-color: #353430;
     --corner-color: #353430;
     --accent-color: #FF8DCB;
