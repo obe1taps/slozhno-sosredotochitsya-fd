@@ -2,11 +2,11 @@
   --page-bg-image: url("../images/cover-image-dark.png");
   --page-color: #000028;
   --header-text-color: #000028;
-  --button-color: #FF0070;
-  --border-button-color: #FF0070;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --section-title-color: #FF0070;
-  --corner-color: #FF0070;
-  --card-text-color: #F1B2CE;
+  --button-color: #ff0070;
+  --border-button-color: rgba(255, 0, 112, 0.4);
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --corner-color: #ff0070;
+  --card-text-color: #f1b2ce;
 }

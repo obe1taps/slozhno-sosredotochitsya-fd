@@ -1,12 +1,12 @@
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
-  --page-color: #FFF1F7;
+  --page-color: #fff1f7;
   --header-text-color: #353430;
   --button-color: #353430;
-  --border-button-color: #353430;
+  --border-button-color: rgba(53, 52, 48, 0.4);
   --corner-color: #353430;
-  --accent-color: #FF8DCB;
-  --title-color: #FFC2E6;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
   --section-title-color: #353430;
   --card-text-color: #353430;
 }
@@ -18,18 +18,22 @@
 @media (prefers-color-scheme: light) {
   :root {
     --page-bg-image: url("../images/cover-image-light.png");
-    --page-color: #FFF1F7;
+    --page-color: #fff1f7;
     --header-text-color: #353430;
     --button-color: #353430;
+    --border-button-color: rgba(53, 52, 48, 0.4);
     --corner-color: #353430;
-    --accent-color: #FF8DCB;
-    --title-color: #FFC2E6;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
     --section-title-color: #353430;
     --card-text-color: #353430;
   }
 
   .decor-rec {
-      display: none;
-    }
+    display: none;
+  }
 
-} 
+  .theme-dark .decor-rec {
+    display: flex;
+  }
+}
