@@ -308,7 +308,6 @@ footer .page__title {
   }
 
   .header__theme-menu-list {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 9px;
     justify-self: center;
